@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Haroun Ach",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "sass": "^1.37.5",
     "webpack": "^5.49.0",
