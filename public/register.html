@@ -1,14 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar-DZ" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
   </head>
-  <body>
-    <header>
-      <h1>Register Page</h1>
-    </header>
+  <body class="register-body">
+    <main>
+      <div class="register__big-area">
+        <div class="register__form">
+          <div class="register__form-sect">
+            <div class="logo">الشعار</div>
+            <h1>تسجيل الدخول</h1>
+          </div>
+
+          <div class="register__form-sect">
+            <form action="" class="form">
+              <div class="form__sect">
+                <label for="username" class="form__label">إسم المستخدم</label>
+                <input
+                  id="username"
+                  name="username"
+                  type="text"
+                  class="form__input"
+                  placeholder="إسم المتخدم"
+                />
+              </div>
+              <div class="form__sect">
+                <label for="email" class="form__label">البريد الإلكتروني</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="text"
+                  class="form__input"
+                  placeholder="البريد الإلكتروني"
+                />
+              </div>
+              <div class="form__sect">
+                <label for="pw" class="form__label">كلمة المرور</label>
+                <input
+                  id="pw"
+                  name="pw"
+                  type="password"
+                  class="form__input"
+                  placeholder="كلمة المرور"
+                />
+              </div>
+              <div class="form__sect">
+                <button type="submit" class="btn btn--wide">تجيل الدخول</button>
+              </div>
+            </form>
+          </div>
+          <div class="register__form-sect">
+            <p>لديك حساب؟ <a href="/login.html">قم بتسجيل الدخول</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="decor-grid">
+        <div class="decor"></div>
+        <div class="decor"></div>
+        <div class="decor"></div>
+        <div class="decor"></div>
+      </div>
+    </main>
+    <footer>
+      <p>هنا التدييل</p>
+    </footer>
+    <script src="assets/bundle.js"></script>
   </body>
 </html>
