@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar-DZ" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,9 +7,58 @@
     <title>Login</title>
   </head>
   <body class="login-body">
-    <header>
-      <h1>Login Page</h1>
-    </header>
+    <main>
+      <div class="login__big-area">
+        <div class="login__form">
+          <div class="login__form-sect">
+            <div class="logo">الشعار</div>
+            <h1>تسجيل الدخول</h1>
+          </div>
+          <div class="login__form-sect">
+            <form action="" class="form">
+              <div class="form__sect">
+                <label for="email" class="form__label">البريد الإلكتروني</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="text"
+                  class="form__input"
+                  placeholder="البريد الإلكتروني"
+                />
+              </div>
+              <div class="form__sect">
+                <label for="pw" class="form__label">كلمة المرور</label>
+                <input
+                  id="pw"
+                  name="pw"
+                  type="text"
+                  class="form__input"
+                  placeholder="كلمة المرور"
+                />
+              </div>
+              <div class="form__sect">
+                <button type="submit" class="btn btn--wide">تجيل الدخول</button>
+              </div>
+              <div class="form__sect">
+                <button class="btn btn--wide">فايسبوك</button>
+              </div>
+            </form>
+          </div>
+          <div class="login__form-sect">
+            <p>ليس لديك حساب؟ <a href="/register.html">إنشأ حساب جديد</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="decor-grid">
+        <div class="decor"></div>
+        <div class="decor"></div>
+        <div class="decor"></div>
+        <div class="decor"></div>
+      </div>
+    </main>
+    <footer>
+      <p>هنا التدييل</p>
+    </footer>
     <script src="assets/bundle.js"></script>
   </body>
 </html>
