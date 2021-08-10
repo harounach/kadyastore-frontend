@@ -7,6 +7,7 @@ module.exports = {
   devServer: {
     contentBase: "./public",
     publicPath: "/assets/",
+    watchContentBase: true,
   },
   output: {
     filename: "bundle.js",
