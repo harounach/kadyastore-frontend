@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar-DZ" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,8 +7,120 @@
     <title>Cart Page</title>
   </head>
   <body>
-    <header>
-      <h1>Cart Page</h1>
+    <header class="home-header appbar">
+      <div class="appbar__section">
+        <div class="logo">الشعار</div>
+      </div>
+      <div class="appbar__section">
+        <span class="app-title">قديا ستور</span>
+      </div>
+      <div class="appbar__section">
+        <nav class="appbar__nav">
+          <!-- /cart.html -->
+          <a href="/cart.html" class="btn btn--icon-btn">
+            <img class="btn__icon" src="" alt="" />
+            <span>العربة</span>
+          </a>
+          <!-- /favorite.html -->
+          <a href="/favorite.html" class="btn btn--icon-btn">
+            <img class="btn__icon" src="" alt="" />
+            <span>المفضلة</span>
+          </a>
+          <!-- /login.html -->
+          <a href="/login.html" class="btn btn--icon-btn">
+            <img class="btn__icon" src="" alt="" />
+            <span>تسجيل الدخول</span>
+          </a>
+        </nav>
+      </div>
     </header>
+
+    <div class="search-section">
+      <form action="" class="form form--search">
+        <label for="search-field">بحث</label>
+        <input
+          id="search-field"
+          type="text"
+          class="form-input"
+          placeholder="إبحث عن منتج"
+        />
+      </form>
+    </div>
+
+    <main>
+      <h1>منتجاتك في العربة</h1>
+      <section class="products-section">
+        <div class="products-grid">
+          <!-- Product Card 1 -->
+          <div class="product-card">
+            <div class="product-card__sect">
+              <div class="production-card__img-wrapper">
+                <div class="product-card__img">صورة المنتج</div>
+              </div>
+            </div>
+            <div class="product-card__sect">
+              <div class="product-card__info">
+                <div class="product-card__sect">
+                  <span class="product-card__name">تفاح</span>
+                  <span class="product-card__price">20دج</span>
+                </div>
+                <div class="product-card__sect">
+                  <button class="btn btn--icon-btn">
+                    أضف إلى العربة
+                    <img src="" alt="" class="btn__icon" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__sect">
+              <button class="btn btn--icon-btn product-card__top-left">
+                أضف إلى المفضلة
+                <img src="" alt="" class="btn__icon" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="summary-section">
+        <div class="summary">
+          <div class="summary__sect">
+            <h2 class="summary__title">ملخص المشتريات</h2>
+          </div>
+          <div class="summary__sect">
+            <span class="summary__prods">5 منتجات</span>
+            <span class="summary__prods-price">120 دج</span>
+          </div>
+          <div class="summary__sect">
+            <span class="summary__ship">رسموم التوصيل</span>
+            <span class="summary__ship-price"></span>
+          </div>
+          <div class="summary__sect">
+            <span class="summary__tot-title">المجموع</span>
+            <span class="summary__total">120 دج</span>
+          </div>
+          <div class="summary__sect">
+            <form action="" class="summary__coupon">
+              <label for="coupon" class="summary__coupon-label">القسيمة</label>
+              <input
+                id="coupon"
+                type="text"
+                class="summary__coupon-input"
+                placeholder="أخل رقم القسيمة"
+              />
+            </form>
+          </div>
+          <div class="summary__sect">
+            <a href="#" class="btn btn--checkout">إشتري</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>هنا التدييل</p>
+    </footer>
+
+    <script src="assets/bundle.js"></script>
   </body>
 </html>
