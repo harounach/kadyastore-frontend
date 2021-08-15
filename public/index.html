@@ -5,123 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kadya Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="home-header appbar">
-      <div class="appbar__section">
-        <div class="logo">الشعار</div>
+    <div class="home-page">
+      <header class="home-page__header appbar">
+        <div class="appbar__section">
+          <div class="logo">الشعار</div>
+        </div>
+        <div class="appbar__section">
+          <span class="app-title">قديا ستور</span>
+        </div>
+        <div class="appbar__section">
+          <nav class="appbar__nav">
+            <!-- /cart.html -->
+            <a href="/cart.html" class="btn btn--icon-btn">
+              <img class="btn__icon" src="" alt="" />
+              <span>العربة</span>
+            </a>
+            <!-- /favorite.html -->
+            <a href="/favorite.html" class="btn btn--icon-btn">
+              <img class="btn__icon" src="" alt="" />
+              <span>المفضلة</span>
+            </a>
+            <!-- /login.html -->
+            <a href="/login.html" class="btn btn--icon-btn">
+              <img class="btn__icon" src="" alt="" />
+              <span>تسجيل الدخول</span>
+            </a>
+          </nav>
+        </div>
+      </header>
+      <div class="home-page__search">
+        <form action="" class="form form--search">
+          <label for="search-field">بحث</label>
+          <input
+            id="search-field"
+            type="text"
+            class="form-input"
+            placeholder="إبحث عن منتج"
+          />
+        </form>
       </div>
-      <div class="appbar__section">
-        <span class="app-title">قديا ستور</span>
-      </div>
-      <div class="appbar__section">
-        <nav class="appbar__nav">
-          <!-- /cart.html -->
-          <a href="/cart.html" class="btn btn--icon-btn">
-            <img class="btn__icon" src="" alt="" />
-            <span>العربة</span>
-          </a>
-          <!-- /favorite.html -->
-          <a href="/favorite.html" class="btn btn--icon-btn">
-            <img class="btn__icon" src="" alt="" />
-            <span>المفضلة</span>
-          </a>
-          <!-- /login.html -->
-          <a href="/login.html" class="btn btn--icon-btn">
-            <img class="btn__icon" src="" alt="" />
-            <span>تسجيل الدخول</span>
-          </a>
-        </nav>
-      </div>
-    </header>
-    <div class="search-section">
-      <form action="" class="form form--search">
-        <label for="search-field">بحث</label>
-        <input
-          id="search-field"
-          type="text"
-          class="form-input"
-          placeholder="إبحث عن منتج"
-        />
-      </form>
+      <main class="home-page__main">
+        <h1 class="title">إشتري أفضل الخضروات والفواكه</h1>
+        <section class="section">
+          <h2 class="subtitle">أكثر مبيعًا</h2>
+          <div class="featured">
+            <div class="feartured__img"></div>
+            <button class="btn btn--primary">إشتري</button>
+          </div>
+        </section>
+        <section class="section">
+          <h2 class="subtitle">موصى بها</h2>
+          <div class="products-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+              <div class="product-card__sect">
+                <div class="production-card__img-wrapper">
+                  <div class="product-card__img">صورة المنتج</div>
+                </div>
+              </div>
+              <div class="product-card__sect">
+                <div class="product-card__info">
+                  <div class="product-card__sect">
+                    <span class="product-card__name">تفاح</span>
+                    <span class="product-card__price">20دج</span>
+                  </div>
+                  <div class="product-card__sect">
+                    <button class="btn btn--icon-btn">
+                      أضف إلى العربة
+                      <img src="" alt="" class="btn__icon" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__sect">
+                <button class="btn btn--icon-btn product-card__top-left">
+                  أضف إلى المفضلة
+                  <img src="" alt="" class="btn__icon" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <h2 class="subtitle">مميزاتنا</h2>
+          <div class="features">
+            <!-- Features Section 1 -->
+            <div class="features__sect">
+              <span class="features__title">السرعة</span>
+              <div class="features__img-wrapper">
+                <img src="" alt="" class="features__img" />
+              </div>
+              <p class="features__desc">سرعة شحن وتوصيل منتجاتنا إلى الربائن</p>
+            </div>
+            <!-- Features Section 2 -->
+            <div class="features__sect">
+              <span class="features__title">الإمان</span>
+              <div class="features__img-wrapper">
+                <img src="" alt="" class="features__img" />
+              </div>
+              <p class="features__desc">
+                أمان منتجاتنا من الشحنن حتى إستلام الزبون
+              </p>
+            </div>
+            <!-- Features Section 3 -->
+            <div class="features__sect">
+              <span class="features__title">الثقة</span>
+              <div class="features__img-wrapper">
+                <img src="" alt="" class="features__img" />
+              </div>
+              <p class="features__desc">ثقة العميل هي أساس نجاحنا</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="home-page__footer footer">
+        <p>هنا التدييل</p>
+      </footer>
     </div>
-    <main>
-      <h1 class="title">إشتري أفضل الخضروات والفواكه</h1>
-      <section class="section">
-        <h2 class="subtitle">أكثر مبيعًا</h2>
-        <div class="featured">
-          <div class="feartured__img"></div>
-          <button class="btn btn--primary">إشتري</button>
-        </div>
-      </section>
-      <section class="section">
-        <h2 class="subtitle">موصى بها</h2>
-        <div class="products-grid">
-          <!-- Product Card 1 -->
-          <div class="product-card">
-            <div class="product-card__sect">
-              <div class="production-card__img-wrapper">
-                <div class="product-card__img">صورة المنتج</div>
-              </div>
-            </div>
-            <div class="product-card__sect">
-              <div class="product-card__info">
-                <div class="product-card__sect">
-                  <span class="product-card__name">تفاح</span>
-                  <span class="product-card__price">20دج</span>
-                </div>
-                <div class="product-card__sect">
-                  <button class="btn btn--icon-btn">
-                    أضف إلى العربة
-                    <img src="" alt="" class="btn__icon" />
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="product-card__sect">
-              <button class="btn btn--icon-btn product-card__top-left">
-                أضف إلى المفضلة
-                <img src="" alt="" class="btn__icon" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <h2 class="subtitle">مميزاتنا</h2>
-        <div class="features">
-          <!-- Features Section 1 -->
-          <div class="features__sect">
-            <span class="features__title">السرعة</span>
-            <div class="features__img-wrapper">
-              <img src="" alt="" class="features__img" />
-            </div>
-            <p class="features__desc">سرعة شحن وتوصيل منتجاتنا إلى الربائن</p>
-          </div>
-          <!-- Features Section 2 -->
-          <div class="features__sect">
-            <span class="features__title">الإمان</span>
-            <div class="features__img-wrapper">
-              <img src="" alt="" class="features__img" />
-            </div>
-            <p class="features__desc">
-              أمان منتجاتنا من الشحنن حتى إستلام الزبون
-            </p>
-          </div>
-          <!-- Features Section 3 -->
-          <div class="features__sect">
-            <span class="features__title">الثقة</span>
-            <div class="features__img-wrapper">
-              <img src="" alt="" class="features__img" />
-            </div>
-            <p class="features__desc">ثقة العميل هي أساس نجاحنا</p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p>هنا التدييل</p>
-    </footer>
     <script src="assets/bundle.js"></script>
   </body>
 </html>
