@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as vars;
+
+// appbar
+.appbar {
+  width: 100%;
+  height: 4.5rem;
+  padding: auto 1rem;
+  background-color: vars.$primary-color;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  // appbar__section
+  &__section {
+  }
+
+  // appbar__logo
+  &__logo {
+  }
+
+  // appbar__title
+  &__title {
+  }
+
+  // appbar__nav
+  &__nav {
+  }
+
+  // appbar__link
+  &__link {
+  }
+}

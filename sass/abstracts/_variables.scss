@@ -11,3 +11,23 @@ $on-secondary-color: #000000;
 $on-surface-color: #000000;
 $on-background-color: #000000;
 $on-error-color: #000000;
+
+// breakpoints
+$breakpoints: (
+  tablet: 600px,
+  large-tablet: 720px,
+  xlarge-tablet: 840px,
+  small-desktop: 960px,
+  desktop: 1024px,
+  large-desktop: 1280px,
+);
+
+// elevations
+$elevations: (
+  no-elevation: 0,
+  status: 2,
+  appbar: 4,
+  bottom-bar: 4,
+  scrim: 12,
+  drawer: 16,
+);
