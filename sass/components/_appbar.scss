@@ -5,28 +5,44 @@
   width: 100%;
   height: 4.5rem;
   padding: auto 1rem;
-  background-color: vars.$primary-color;
+  background-color: vars.$surface-color;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding: 0 0.5rem;
 
   // appbar__section
   &__section {
+    margin-left: 0.5rem;
+    // appbar__section--left
+    &--left {
+      margin-right: auto;
+      margin-left: 0;
+    }
   }
 
   // appbar__logo
   &__logo {
+    background-color: vars.$primary-color;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem;
   }
 
   // appbar__title
   &__title {
+    color: vars.$on-surface-color;
   }
 
   // appbar__nav
   &__nav {
+    display: flex;
   }
 
   // appbar__link
   &__link {
+    margin-right: 0.5rem;
   }
 }
